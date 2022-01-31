@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "snakerbone",
+  "version": "${version}",
+
+  "name": "SnakerBone Mod",
+  "description": "SnakerBone Mod For 1.18",
+  "authors": [
+    "Bone Snake"
+  ],
+  "contact": {
+    "homepage": "https://bonesnake.com.au/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "au.com.snakerbone.SnakerBoneMod"
+    ]
+  },
+  "mixins": [
+    "snakerbone.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
