@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "snakerbone:block/ametrine_block"
+  }
+}
