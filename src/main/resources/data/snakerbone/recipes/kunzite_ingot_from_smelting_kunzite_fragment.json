@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "snakerbone:kunzite_fragment"
+  },
+  "result": "snakerbone:kunzite_ingot",
+  "experience": 100,
+  "cookingtime": 1.4
+}

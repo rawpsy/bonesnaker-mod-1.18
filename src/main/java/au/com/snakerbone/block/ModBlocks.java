@@ -9,16 +9,17 @@ import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
     public static final Block AMETRINE_BLOCK = registerBlock("ametrine_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(0.25f).requiresTool()), ModItemGroups.SNAKE);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(2.5F,6.0F).sounds(BlockSoundGroup.METAL)), ModItemGroups.SNAKE);
 
     public static final Block AMETRINE_ORE = registerBlock("ametrine_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(0.1f).requiresTool()), ModItemGroups.SNAKE);
+            new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5F,3.0F)), ModItemGroups.SNAKE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "snakerbone:ametrine_shard"
+    }
+  },
+  "result": {
+    "item": "snakerbone:ametrine_block"
+  }
+}
