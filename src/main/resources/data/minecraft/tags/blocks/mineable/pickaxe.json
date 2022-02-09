@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "snakerbone:ametrine_block",
-    "snakerbone:ametrine_ore"
+    "snakerbone:ametrine_ore",
+    "snakerbone:custom_block"
   ]
 }

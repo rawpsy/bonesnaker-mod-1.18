@@ -1,6 +1,7 @@
 package au.com.snakerbone.block;
 
 import au.com.snakerbone.SnakerBoneMod;
+import au.com.snakerbone.block.custom.CustomBlock;
 import au.com.snakerbone.item.ModItemGroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -20,6 +21,9 @@ public class ModBlocks {
 
     public static final Block AMETRINE_ORE = registerBlock("ametrine_ore",
             new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5F,3.0F)), ModItemGroups.SNAKE);
+
+    public static final Block CUSTOM_BLOCK = registerBlock("custom_block",
+            new CustomBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5F,3.0F)), ModItemGroups.SNAKE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

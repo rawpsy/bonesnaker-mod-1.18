@@ -2,9 +2,17 @@
   "item.snakerbone.kunzite_ingot": "Kunzite Ingot",
   "item.snakerbone.kunzite_fragment": "Kunzite Fragment",
   "item.snakerbone.ametrine_shard": "Ametrine Shard",
+  "item.snakerbone.custom_item": "Custom Item",
+  "item.snakerbone.turnip": "Turnip",
+  "item.snakerbone.charged_peat": "Charged Peat",
 
   "block.snakerbone.ametrine_block": "Ametrine Block",
   "block.snakerbone.ametrine_ore": "Ametrine Ore",
+  "block.snakerbone.custom_block": "Custom Block",
 
-  "itemGroup.snakerbone.snake": "SnakerBone"
+  "itemGroup.snakerbone.snake": "SnakerBone",
+
+  "item.snakerbone.custom_item.no_valuables": "No Ores Found!",
+  "item.snakerbone.custom_item.tooltip.shift": "Right Click To Find Ores Beneath You",
+  "item.snakerbone.custom_item.tooltip": "Hold §eSHIFT§r For More Info"
 }
