@@ -3,6 +3,15 @@
   "values": [
     "snakerbone:ametrine_block",
     "snakerbone:ametrine_ore",
-    "snakerbone:custom_block"
+    "snakerbone:custom_block",
+    "snakerbone:kunzite_block",
+    "snakerbone:kunzite_ore",
+    "snakerbone:kunzite_stairs",
+    "snakerbone:kunzite_slab",
+    "snakerbone:kunzite_button",
+    "snakerbone:kunzite_pressure_plate",
+    "snakerbone:kunzite_fence",
+    "snakerbone:kunzite_fence_gate",
+    "snakerbone:kunzite_wall"
   ]
 }

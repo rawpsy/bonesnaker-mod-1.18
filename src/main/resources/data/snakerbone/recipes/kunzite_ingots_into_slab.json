@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "   ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "snakerbone:kunzite_ingot"
+    }
+  },
+  "result": {
+    "item": "snakerbone:kunzite_slab",
+    "count": 6
+  }
+}

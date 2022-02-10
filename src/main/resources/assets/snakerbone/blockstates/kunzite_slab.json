@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "snakerbone:block/kunzite_slab"
+    },
+    "type=double": {
+      "model": "snakerbone:block/kunzite_block"
+    },
+    "type=top": {
+      "model": "snakerbone:block/kunzite_slab_top"
+    }
+  }
+}

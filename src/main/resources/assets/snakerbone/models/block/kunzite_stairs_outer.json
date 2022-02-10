@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "snakerbone:block/kunzite_block",
+    "top": "snakerbone:block/kunzite_block",
+    "side": "snakerbone:block/kunzite_block"
+  }
+}

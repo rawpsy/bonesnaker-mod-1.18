@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "snakerbone:block/kunzite_pressure_plate" },
+    "powered=true": { "model": "snakerbone:block/kunzite_pressure_plate_down" }
+  }
+}

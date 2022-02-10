@@ -1,5 +1,6 @@
 package au.com.snakerbone.item.custom;
 
+import au.com.snakerbone.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -70,9 +71,6 @@ public class CustomItem extends Item {
     }
 
     private boolean isValuableBlock(Block block) {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE
-                || block == Blocks.GOLD_ORE || block == Blocks.DEEPSLATE_COAL_ORE || block == Blocks.DEEPSLATE_COPPER_ORE || block == Blocks.DEEPSLATE_DIAMOND_ORE
-                || block == Blocks.DEEPSLATE_IRON_ORE || block == Blocks.DEEPSLATE_GOLD_ORE || block == Blocks.REDSTONE_ORE || block == Blocks.DEEPSLATE_REDSTONE_ORE
-                || block == Blocks.LAPIS_ORE || block == Blocks.DEEPSLATE_LAPIS_ORE;
+        return ModTags.Blocks.CUSTOM_ITEM_DETECTABLE_BLOCKS.contains(block);
     }
 }

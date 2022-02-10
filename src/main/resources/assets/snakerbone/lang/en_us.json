@@ -9,6 +9,16 @@
   "block.snakerbone.ametrine_block": "Ametrine Block",
   "block.snakerbone.ametrine_ore": "Ametrine Ore",
   "block.snakerbone.custom_block": "Custom Block",
+  "block.snakerbone.kunzite_block": "Kunzite Block",
+  "block.snakerbone.kunzite_ore": "Kunzite Ore",
+  "block.snakerbone.kunzite_stairs": "Kunzite Stairs",
+  "block.snakerbone.kunzite_slab": "Kunzite Slab",
+  "block.snakerbone.kunzite_button": "Kunzite Button",
+  "block.snakerbone.kunzite_pressure_plate": "Kunzite Pressure Plate",
+  "block.snakerbone.kunzite_fence": "Kunzite Fence",
+  "block.snakerbone.kunzite_fence_gate": "Kunzite Fence Gate",
+  "block.snakerbone.kunzite_wall": "Kunzite Wall",
+  "block.snakerbone.cherry_blossom_planks": "Cherry Blossom Planks",
 
   "itemGroup.snakerbone.snake": "SnakerBone",
 

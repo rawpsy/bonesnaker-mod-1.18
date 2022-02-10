@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "au.com.snakerbone.SnakerBoneMod"
+    ],
+    "client": [
+      "au.com.snakerbone.SnakerBoneClient"
     ]
   },
   "mixins": [

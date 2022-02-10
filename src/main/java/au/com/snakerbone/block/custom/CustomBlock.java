@@ -21,20 +21,6 @@ public class CustomBlock extends Block {
     }
 
     @Override
-    public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
-
-        if(world.isClient()) {
-            if(hand == Hand.MAIN_HAND) {
-                player.sendMessage(new LiteralText("CLIENT: THIS IS THE MAIN HAND!"), false);
-            } else {
-                player.sendMessage(new LiteralText("CLIENT: THIS IS THE OFF HAND!"), false);
-            }
-        }
-
-        return ActionResult.PASS;
-    }
-
-    @Override
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if(!world.isClient) {
             if(entity instanceof LivingEntity) {
