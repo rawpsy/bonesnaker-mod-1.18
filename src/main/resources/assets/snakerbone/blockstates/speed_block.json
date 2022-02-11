@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "snakerbone:block/speed_block" }
+  }
+}

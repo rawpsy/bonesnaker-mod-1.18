@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "snakerbone:bismuth"
+    }
+  },
+  "result": {
+    "item": "snakerbone:bismuth_block"
+  }
+}

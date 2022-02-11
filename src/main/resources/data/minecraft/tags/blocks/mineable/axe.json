@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "snakerbone:cherry_blossom_planks"
+    "snakerbone:cherry_blossom_planks",
+    "snakerbone:cherry_blossom_door",
+    "snakerbone:cherry_blossom_trapdoor"
   ]
 }

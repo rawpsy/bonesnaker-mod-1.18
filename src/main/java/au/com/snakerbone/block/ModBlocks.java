@@ -15,10 +15,10 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
-    public static final Block AMETRINE_BLOCK = registerBlock("ametrine_block",
+    public static final Block BISMUTH_BLOCK = registerBlock("bismuth_block",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(2.5F,6.0F).sounds(BlockSoundGroup.METAL)), ModItemGroups.SNAKE);
 
-    public static final Block AMETRINE_ORE = registerBlock("ametrine_ore",
+    public static final Block BISMUTH_ORE = registerBlock("bismuth_ore",
             new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5F,3.0F)), ModItemGroups.SNAKE);
 
     public static final Block KUNZITE_ORE = registerBlock("kunzite_ore",
@@ -27,8 +27,8 @@ public class ModBlocks {
     public static final Block KUNZITE_BLOCK = registerBlock("kunzite_block",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(2.5F,6.0F).sounds(BlockSoundGroup.METAL)), ModItemGroups.SNAKE);
 
-    public static final Block CUSTOM_BLOCK = registerBlock("custom_block",
-            new CustomBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5F,5.0F)), ModItemGroups.SNAKE);
+    public static final Block SPEED_BLOCK = registerBlock("speed_block",
+            new SpeedBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5F,5.0F)), ModItemGroups.SNAKE);
 
     public static final Block KUNZITE_STAIRS = registerBlock("kunzite_stairs",
             new ModStairsBlock(ModBlocks.KUNZITE_BLOCK.getDefaultState(),

@@ -11,7 +11,7 @@ public class ModTags {
 
     public static class Blocks {
 
-        public static final Tag.Identified<Block> CUSTOM_ITEM_DETECTABLE_BLOCKS = createTag("custom_item_detectable_blocks");
+        public static final Tag.Identified<Block> ORE_SNIFFER_DETECTABLE_BLOCKS = createTag("ore_sniffer_detectable_blocks");
 
         public static final Tag.Identified<Block> KUNZITE_BLOCKS = createCommonTag("kunzite_blocks");
 

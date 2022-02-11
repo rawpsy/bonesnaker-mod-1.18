@@ -1,14 +1,19 @@
 {
   "item.snakerbone.kunzite_ingot": "Kunzite Ingot",
-  "item.snakerbone.kunzite_fragment": "Kunzite Fragment",
-  "item.snakerbone.ametrine_shard": "Ametrine Shard",
-  "item.snakerbone.custom_item": "Custom Item",
+  "item.snakerbone.raw_kunzite": "Raw Kunzite",
+  "item.snakerbone.bismuth": "Bismuth",
+  "item.snakerbone.ore_sniffer": "Ore Sniffer",
   "item.snakerbone.turnip": "Turnip",
   "item.snakerbone.charged_peat": "Charged Peat",
+  "item.snakerbone.bismuth_pickaxe": "Bismuth Pickaxe",
+  "item.snakerbone.bismuth_axe": "Bismuth Axe",
+  "item.snakerbone.bismuth_shovel": "Bismuth Shovel",
+  "item.snakerbone.bismuth_hoe": "Bismuth Hoe",
+  "item.snakerbone.bismuth_sword": "Bismuth Sword",
 
-  "block.snakerbone.ametrine_block": "Ametrine Block",
-  "block.snakerbone.ametrine_ore": "Ametrine Ore",
-  "block.snakerbone.custom_block": "Custom Block",
+  "block.snakerbone.bismuth_block": "Bismuth Block",
+  "block.snakerbone.bismuth_ore": "Bismuth Ore",
+  "block.snakerbone.speed_block": "Speed Block",
   "block.snakerbone.kunzite_block": "Kunzite Block",
   "block.snakerbone.kunzite_ore": "Kunzite Ore",
   "block.snakerbone.kunzite_stairs": "Kunzite Stairs",
@@ -19,10 +24,12 @@
   "block.snakerbone.kunzite_fence_gate": "Kunzite Fence Gate",
   "block.snakerbone.kunzite_wall": "Kunzite Wall",
   "block.snakerbone.cherry_blossom_planks": "Cherry Blossom Planks",
+  "block.snakerbone.cherry_blossom_trapdoor": "Cherry Blossom Trapdoor",
+  "block.snakerbone.cherry_blossom_door": "Cherry Blossom Door",
 
   "itemGroup.snakerbone.snake": "SnakerBone",
 
-  "item.snakerbone.custom_item.no_valuables": "No Ores Found!",
-  "item.snakerbone.custom_item.tooltip.shift": "Right Click To Find Ores Beneath You",
-  "item.snakerbone.custom_item.tooltip": "Hold §eSHIFT§r For More Info"
+  "item.snakerbone.ore_sniffer.no_valuables": "No Ores Found!",
+  "item.snakerbone.ore_sniffer.tooltip.shift": "Right Click To Find Ores Beneath You",
+  "item.snakerbone.ore_sniffer.tooltip": "Hold §eSHIFT§r For More Info"
 }

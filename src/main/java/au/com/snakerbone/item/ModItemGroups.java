@@ -8,5 +8,5 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup SNAKE = FabricItemGroupBuilder.build(new Identifier(SnakerBoneMod.MOD_ID, "snake"),
-            () -> new ItemStack(ModItems.AMETRINE_SHARD));
+            () -> new ItemStack(ModItems.BISMUTH));
 }

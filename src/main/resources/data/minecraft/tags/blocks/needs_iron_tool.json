@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "snakerbone:ametrine_block",
-    "snakerbone:ametrine_ore",
-    "snakerbone:custom_block",
+    "snakerbone:bismuth_block",
+    "snakerbone:bismuth_ore",
+    "snakerbone:speed_block",
     "snakerbone:kunzite_block",
     "snakerbone:kunzite_ore",
     "snakerbone:kunzite_stairs",
