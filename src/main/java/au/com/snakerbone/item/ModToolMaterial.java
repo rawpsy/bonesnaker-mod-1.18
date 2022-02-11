@@ -8,8 +8,10 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    BISMUTH(8, 4062, 18.0F, 8.0F, 45, () ->
-            Ingredient.ofItems(ModItems.BISMUTH));
+    BISMUTH(10, 9048, 25.0F, 200.0F, 45, () ->
+            Ingredient.ofItems(ModItems.BISMUTH)),
+    KUNZITE(3, 750, 4.0F, 8.0F, 25, () ->
+            Ingredient.ofItems(ModItems.KUNZITE_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;

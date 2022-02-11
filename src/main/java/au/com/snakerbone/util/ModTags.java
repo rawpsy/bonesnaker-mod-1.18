@@ -13,6 +13,8 @@ public class ModTags {
 
         public static final Tag.Identified<Block> ORE_SNIFFER_DETECTABLE_BLOCKS = createTag("ore_sniffer_detectable_blocks");
 
+        public static final Tag.Identified<Block> PAXEL_MINEABLE = createTag("mineable/paxel");
+
         public static final Tag.Identified<Block> KUNZITE_BLOCKS = createCommonTag("kunzite_blocks");
 
         public static final Tag.Identified<Block> KUNZITE_ORES = createCommonTag("kunzite_ores");
