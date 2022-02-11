@@ -2,16 +2,20 @@ package au.com.snakerbone.item;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.tag.ItemTags;
 import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    BISMUTH(10, 9048, 25.0F, 200.0F, 45, () ->
+    BISMUTH(3, 2031, 10.0f, 3.0f, 10, () ->
             Ingredient.ofItems(ModItems.BISMUTH)),
-    KUNZITE(3, 750, 4.0F, 8.0F, 25, () ->
-            Ingredient.ofItems(ModItems.KUNZITE_INGOT));
+    KUNZITE(2, 350, 6.0F, 2.0F, 14, () ->
+            Ingredient.ofItems(ModItems.KUNZITE_INGOT)),
+    WOOD(0, 59, 2.0F, 0.0F, 15, () -> {
+        return Ingredient.fromTag(ItemTags.PLANKS);
+    });
 
     private final int miningLevel;
     private final int itemDurability;
