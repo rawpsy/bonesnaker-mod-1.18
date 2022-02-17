@@ -1,0 +1,8 @@
+{
+  "ore_sniffer_found_ore": {
+    "subtitle": "snakerbone.ore_sniffer_found_ore",
+    "sounds": [
+      "snakerbone:ore_sniffer_found_ore"
+    ]
+  }
+}

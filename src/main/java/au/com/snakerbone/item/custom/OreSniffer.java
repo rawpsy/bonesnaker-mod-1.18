@@ -1,6 +1,7 @@
 package au.com.snakerbone.item.custom;
 
 import au.com.snakerbone.item.ModItems;
+import au.com.snakerbone.sound.ModSounds;
 import au.com.snakerbone.util.InventoryUtil;
 import au.com.snakerbone.util.ModTags;
 import net.minecraft.block.Block;
@@ -11,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.sound.SoundCategory;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -55,6 +57,9 @@ public class OreSniffer extends Item {
                     if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)) {
                         addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow);
                     }
+
+                    context.getWorld().playSound(player, positionClicked, ModSounds.ORE_SNIFFER_FOUND_ORE,
+                            SoundCategory.BLOCKS, 1f, 1f);
 
                     break;
                 }
