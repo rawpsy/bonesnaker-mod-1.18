@@ -6,6 +6,7 @@ import au.com.snakerbone.item.ModItemGroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -68,6 +69,10 @@ public class ModBlocks {
 
     public static final Block TURNIP_CROP = registerBlockWithoutBlockItem("turnip_crop",
             new ModTurnipBlock(FabricBlockSettings.copy(Blocks.BEETROOTS).sounds(BlockSoundGroup.CROP)));
+
+    public static final Block PINK_ROSE = registerBlock("pink_rose",
+            new FlowerBlock(StatusEffects.BAD_OMEN, 8,
+                    FabricBlockSettings.copy(Blocks.PINK_TULIP).sounds(BlockSoundGroup.GRASS)), ModItemGroups.SNAKE);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(SnakerBoneMod.MOD_ID, name), block);

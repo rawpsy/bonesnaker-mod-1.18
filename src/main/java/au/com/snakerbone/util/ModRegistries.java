@@ -1,7 +1,12 @@
 package au.com.snakerbone.util;
 
 import au.com.snakerbone.SnakerBoneMod;
+import au.com.snakerbone.command.ReturnHomeCommand;
+import au.com.snakerbone.command.SetHomeCommand;
+import au.com.snakerbone.event.ModPlayerEventCopyFrom;
 import au.com.snakerbone.item.ModItems;
+import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.ComposterBlock;
 
@@ -10,6 +15,8 @@ public class ModRegistries {
     public static void registerModStuffs() {
         registerFuels();
         regsisterModComposterMethod();
+        registerCommands();
+        registerEvents();
     }
 
     private static void registerFuels() {
@@ -22,6 +29,15 @@ public class ModRegistries {
     private static void regsisterModComposterMethod() {
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.TURNIP_SEEDS, 0.5f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.TURNIP, 0.75f);
+    }
+
+    private static void registerCommands() {
+        CommandRegistrationCallback.EVENT.register(SetHomeCommand::register);
+        CommandRegistrationCallback.EVENT.register(ReturnHomeCommand::register);
+    }
+
+    private static void registerEvents() {
+        ServerPlayerEvents.COPY_FROM.register(new ModPlayerEventCopyFrom());
     }
 
 }
