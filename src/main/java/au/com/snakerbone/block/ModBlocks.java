@@ -74,6 +74,10 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.BAD_OMEN, 8,
                     FabricBlockSettings.copy(Blocks.PINK_TULIP).sounds(BlockSoundGroup.GRASS)), ModItemGroups.SNAKE);
 
+    public static final Block POTTED_PINK_ROSE = registerBlockWithoutBlockItem("potted_pink_rose",
+            new FlowerPotBlock(ModBlocks.PINK_ROSE, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).sounds(BlockSoundGroup.STONE)));
+
+
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(SnakerBoneMod.MOD_ID, name), block);
     }
