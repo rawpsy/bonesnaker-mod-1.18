@@ -1,6 +1,14 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "snakerbone:item/data_tablet"
-  }
+    "layer0": "snakerbone:item/data_tablet_off"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "snakerbone:on": 1
+      },
+      "model": "snakerbone:item/data_tablet_on"
+    }
+  ]
 }
