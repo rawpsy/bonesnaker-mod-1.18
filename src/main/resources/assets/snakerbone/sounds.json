@@ -4,5 +4,35 @@
     "sounds": [
       "snakerbone:ore_sniffer_found_ore"
     ]
+  },
+  "kunzite_lamp_break": {
+    "subtitle": "snakerbone.kunzite_lamp_break",
+    "sounds": [
+      "snakerbone:kunzite_lamp_break"
+    ]
+  },
+  "kunzite_lamp_step": {
+    "subtitle": "snakerbone.kunzite_lamp_step",
+    "sounds": [
+      "snakerbone:kunzite_lamp_step"
+    ]
+  },
+  "kunzite_lamp_place": {
+    "subtitle": "snakerbone.kunzite_lamp_place",
+    "sounds": [
+      "snakerbone:kunzite_lamp_place"
+    ]
+  },
+  "kunzite_lamp_hit": {
+    "subtitle": "snakerbone.kunzite_lamp_hit",
+    "sounds": [
+      "snakerbone:kunzite_lamp_hit"
+    ]
+  },
+  "kunzite_lamp_fall": {
+    "subtitle": "snakerbone.kunzite_lamp_fall",
+    "sounds": [
+      "snakerbone:kunzite_lamp_fall"
+    ]
   }
 }

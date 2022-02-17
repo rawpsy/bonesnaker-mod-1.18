@@ -3,6 +3,7 @@ package au.com.snakerbone.block;
 import au.com.snakerbone.SnakerBoneMod;
 import au.com.snakerbone.block.custom.*;
 import au.com.snakerbone.item.ModItemGroups;
+import au.com.snakerbone.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -64,7 +65,7 @@ public class ModBlocks {
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(1.5F,5.0F).sounds(BlockSoundGroup.WOOD).nonOpaque()), ModItemGroups.SNAKE);
 
     public static final Block KUNZITE_LAMP = registerBlock("kunzite_lamp",
-            new KunziteLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(1.5F,5.0F).sounds(BlockSoundGroup.METAL)
+            new KunziteLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(1.5F,5.0F).sounds(ModSounds.KUNZITE_SOUNDS)
                     .luminance((state) -> state.get(KunziteLampBlock.CLICKED) ? 15 : 0)), ModItemGroups.SNAKE);
 
     public static final Block TURNIP_CROP = registerBlockWithoutBlockItem("turnip_crop",
