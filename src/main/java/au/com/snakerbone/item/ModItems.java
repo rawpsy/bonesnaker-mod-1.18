@@ -45,7 +45,7 @@ public class ModItems {
             new ModAneurysmBlade(ModToolMaterial.WOOD, 1, 75f,
                     new FabricItemSettings().group(ModItemGroups.SNAKE)));
     public static final Item KUNZITE_HELMET = registerItem("kunzite_helmet",
-            new ArmorItem(ModArmorMaterials.KUNZITE, EquipmentSlot.HEAD,
+            new ModArmorItem(ModArmorMaterials.KUNZITE, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroups.SNAKE)));
     public static final Item KUNZITE_CHESTPLATE = registerItem("kunzite_chestplate",
             new ArmorItem(ModArmorMaterials.KUNZITE, EquipmentSlot.CHEST,
@@ -56,6 +56,8 @@ public class ModItems {
     public static final Item KUNZITE_BOOTS = registerItem("kunzite_boots",
             new ArmorItem(ModArmorMaterials.KUNZITE, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroups.SNAKE)));
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().group(ModItemGroups.SNAKE).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(SnakerBoneMod.MOD_ID, name), item);

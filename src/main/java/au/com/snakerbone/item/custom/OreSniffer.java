@@ -1,5 +1,7 @@
 package au.com.snakerbone.item.custom;
 
+import au.com.snakerbone.item.ModItems;
+import au.com.snakerbone.util.InventoryUtil;
 import au.com.snakerbone.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.screen.Screen;
@@ -8,6 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
@@ -45,9 +48,14 @@ public class OreSniffer extends Item {
                 Block blockBelow = context.getWorld().getBlockState(positionClicked.down(i)).getBlock();
 
                 if(isValuableBlock(blockBelow)) {
-                    outputValuableCoords(positionClicked, player, blockBelow);
+                    outputValuableCoords(positionClicked.add(0, -i, 0), player, blockBelow);
 
                     foundBlock = true;
+
+                    if(InventoryUtil.hasPlayerStackInInventory(player, ModItems.DATA_TABLET)) {
+                        addNbtToDataTablet(player, positionClicked.add(0, -i, 0), blockBelow);
+                    }
+
                     break;
                 }
             }
@@ -62,6 +70,17 @@ public class OreSniffer extends Item {
 
 
         return super.useOnBlock(context);
+    }
+
+    private void addNbtToDataTablet(PlayerEntity player, BlockPos pos, Block blockBelow) {
+        ItemStack dataTablet =
+                player.getInventory().getStack(InventoryUtil.getFirstInventoryIndex(player, ModItems.DATA_TABLET));
+
+        NbtCompound nbtData = new NbtCompound();
+        nbtData.putString("snakerbone.last_ore", "Found " + blockBelow.asItem().getName().getString() + " at (" +
+                pos.getX() + ", " + pos.getY() + ", " + pos.getZ() + ")");
+
+        dataTablet.setNbt(nbtData);
     }
 
     private void outputValuableCoords(BlockPos blockPos, PlayerEntity player, Block blockBelow) {

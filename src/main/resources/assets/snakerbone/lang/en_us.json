@@ -16,6 +16,7 @@
   "item.snakerbone.kunzite_chestplate": "Kunzite Chestplate",
   "item.snakerbone.kunzite_leggings": "Kunzite Leggings",
   "item.snakerbone.kunzite_boots": "Kunzite Boots",
+  "item.snakerbone.data_tablet": "Data Tablet",
 
   "block.snakerbone.bismuth_block": "Bismuth Block",
   "block.snakerbone.bismuth_ore": "Bismuth Ore",
@@ -32,10 +33,13 @@
   "block.snakerbone.cherry_blossom_planks": "Cherry Blossom Planks",
   "block.snakerbone.cherry_blossom_trapdoor": "Cherry Blossom Trapdoor",
   "block.snakerbone.cherry_blossom_door": "Cherry Blossom Door",
+  "block.snakerbone.kunzite_lamp": "Kunzite Lamp",
 
   "itemGroup.snakerbone.snake": "SnakerBone",
 
   "item.snakerbone.ore_sniffer.no_valuables": "No Ores Found!",
   "item.snakerbone.ore_sniffer.tooltip.shift": "Right Click To Find Ores Beneath You",
-  "item.snakerbone.ore_sniffer.tooltip": "Hold §eSHIFT§r For More Info"
+  "item.snakerbone.ore_sniffer.tooltip": "Hold §eSHIFT§r For More Info",
+
+  "enchantment.snakerbone.lightning_striker": "Lightning Striker"
 }

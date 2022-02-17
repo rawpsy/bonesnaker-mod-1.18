@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "clicked=false": { "model": "snakerbone:block/kunzite_lamp_off" },
+    "clicked=true": { "model": "snakerbone:block/kunzite_lamp_on" }
+  }
+}
