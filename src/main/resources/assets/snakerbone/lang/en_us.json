@@ -17,6 +17,7 @@
   "item.snakerbone.kunzite_leggings": "Kunzite Leggings",
   "item.snakerbone.kunzite_boots": "Kunzite Boots",
   "item.snakerbone.data_tablet": "Data Tablet",
+  "item.snakerbone.turnip_seeds": "Turnip Seeds",
 
   "block.snakerbone.bismuth_block": "Bismuth Block",
   "block.snakerbone.bismuth_ore": "Bismuth Ore",
@@ -34,6 +35,7 @@
   "block.snakerbone.cherry_blossom_trapdoor": "Cherry Blossom Trapdoor",
   "block.snakerbone.cherry_blossom_door": "Cherry Blossom Door",
   "block.snakerbone.kunzite_lamp": "Kunzite Lamp",
+  "block.snakerbone.turnip_crop": "Turnip Crop",
 
   "itemGroup.snakerbone.snake": "SnakerBone",
 
