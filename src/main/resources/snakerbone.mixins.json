@@ -4,6 +4,7 @@
   "package": "au.com.snakerbone.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ModEntityDataSaver"
   ],
   "client": [
     "ExampleMixin"
