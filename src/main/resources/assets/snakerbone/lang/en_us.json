@@ -18,6 +18,8 @@
   "item.snakerbone.kunzite_boots": "Kunzite Boots",
   "item.snakerbone.data_tablet": "Data Tablet",
   "item.snakerbone.turnip_seeds": "Turnip Seeds",
+  "item.snakerbone.kali_music_disc": "Kali Music Disc",
+  "item.snakerbone.kali_music_disc.desc": "Caster - Kali",
 
   "block.snakerbone.bismuth_block": "Bismuth Block",
   "block.snakerbone.bismuth_ore": "Bismuth Ore",
@@ -38,6 +40,7 @@
   "block.snakerbone.turnip_crop": "Turnip Crop",
   "block.snakerbone.pink_rose": "Pink Rose",
   "block.snakerbone.potted_pink_rose": "Potted Pink Rose",
+  "block.snakerbone.kunzite_blaster": "Kunzite Blaster",
 
   "itemGroup.snakerbone.snake": "SnakerBone",
 

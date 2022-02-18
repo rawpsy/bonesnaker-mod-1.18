@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "snakerbone:block/kunzite_blaster" },
+    "facing=east": { "model": "snakerbone:block/kunzite_blaster", "y": 90 },
+    "facing=south": { "model": "snakerbone:block/kunzite_blaster", "y": 180 },
+    "facing=west": { "model": "snakerbone:block/kunzite_blaster", "y": 270 }
+  }
+}

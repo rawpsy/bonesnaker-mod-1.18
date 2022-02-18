@@ -78,6 +78,9 @@ public class ModBlocks {
     public static final Block POTTED_PINK_ROSE = registerBlockWithoutBlockItem("potted_pink_rose",
             new FlowerPotBlock(ModBlocks.PINK_ROSE, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).sounds(BlockSoundGroup.STONE)));
 
+    public static final Block KUNZITE_BLASTER = registerBlock("kunzite_blaster",
+            new KunziteBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().sounds(BlockSoundGroup.METAL)), ModItemGroups.SNAKE);
+
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(SnakerBoneMod.MOD_ID, name), block);

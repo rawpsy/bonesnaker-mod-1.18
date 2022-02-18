@@ -17,6 +17,8 @@ public class ModSounds {
     public static SoundEvent KUNZITE_LAMP_PLACE = registerSoundEvent("kunzite_lamp_place");
     public static SoundEvent KUNZITE_LAMP_STEP = registerSoundEvent("kunzite_lamp_step");
 
+    public static SoundEvent KALI = registerSoundEvent("kali");
+
 
     public static final BlockSoundGroup KUNZITE_SOUNDS = new BlockSoundGroup(1f, 1f,
             ModSounds.KUNZITE_LAMP_BREAK, ModSounds.KUNZITE_LAMP_STEP, ModSounds.KUNZITE_LAMP_PLACE, ModSounds.KUNZITE_LAMP_HIT, ModSounds.KUNZITE_LAMP_FALL);

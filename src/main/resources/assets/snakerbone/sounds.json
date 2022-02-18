@@ -34,5 +34,13 @@
     "sounds": [
       "snakerbone:kunzite_lamp_fall"
     ]
+  },
+  "kali": {
+    "sounds": [
+      {
+        "name": "snakerbone:kali",
+        "stream": true
+      }
+    ]
   }
 }

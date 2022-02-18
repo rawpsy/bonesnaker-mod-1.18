@@ -3,6 +3,7 @@ package au.com.snakerbone.item;
 import au.com.snakerbone.SnakerBoneMod;
 import au.com.snakerbone.block.ModBlocks;
 import au.com.snakerbone.item.custom.*;
+import au.com.snakerbone.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Material;
 import net.minecraft.entity.EquipmentSlot;
@@ -79,6 +80,9 @@ public class ModItems {
 
     public static final Item TURNIP_SEEDS = registerItem("turnip_seeds",
             new AliasedBlockItem(ModBlocks.TURNIP_CROP, new FabricItemSettings().group(ModItemGroups.SNAKE)));
+
+    public static final Item KALI_MUSIC_DISC = registerItem("kali_music_disc",
+            new ModMusicDiscItem(9, ModSounds.KALI, new FabricItemSettings().group(ModItemGroups.SNAKE).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(SnakerBoneMod.MOD_ID, name), item);
