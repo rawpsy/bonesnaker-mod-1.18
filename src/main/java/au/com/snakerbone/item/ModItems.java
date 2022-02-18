@@ -2,6 +2,7 @@ package au.com.snakerbone.item;
 
 import au.com.snakerbone.SnakerBoneMod;
 import au.com.snakerbone.block.ModBlocks;
+import au.com.snakerbone.fluid.ModFluids;
 import au.com.snakerbone.item.custom.*;
 import au.com.snakerbone.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -83,6 +84,15 @@ public class ModItems {
 
     public static final Item KALI_MUSIC_DISC = registerItem("kali_music_disc",
             new ModMusicDiscItem(9, ModSounds.KALI, new FabricItemSettings().group(ModItemGroups.SNAKE).maxCount(1)));
+
+    public static final Item KUNZITE_STAFF = registerItem("kunzite_staff",
+            new Item(new FabricItemSettings().group(ModItemGroups.SNAKE).maxCount(1)));
+
+    public static final Item KUNZITE_BOW = registerItem("kunzite_bow",
+            new BowItem(new FabricItemSettings().group(ModItemGroups.SNAKE).maxCount(1)));
+
+    public static final Item HONEY_BUCKET = registerItem("honey_bucket",
+            new BucketItem(ModFluids.HONEY_STILL, new FabricItemSettings().group(ModItemGroups.SNAKE).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(SnakerBoneMod.MOD_ID, name), item);

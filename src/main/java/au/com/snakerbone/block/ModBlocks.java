@@ -2,6 +2,7 @@ package au.com.snakerbone.block;
 
 import au.com.snakerbone.SnakerBoneMod;
 import au.com.snakerbone.block.custom.*;
+import au.com.snakerbone.fluid.ModFluids;
 import au.com.snakerbone.item.ModItemGroups;
 import au.com.snakerbone.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -80,6 +81,9 @@ public class ModBlocks {
 
     public static final Block KUNZITE_BLASTER = registerBlock("kunzite_blaster",
             new KunziteBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().sounds(BlockSoundGroup.METAL)), ModItemGroups.SNAKE);
+
+    public static final Block HONEY_FLUID_BLOCK = registerBlockWithoutBlockItem("honey_fluid_block",
+            new ModFluidBlock(ModFluids.HONEY_STILL, FabricBlockSettings.of(Material.WATER).noCollision().nonOpaque().dropsNothing()));
 
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
