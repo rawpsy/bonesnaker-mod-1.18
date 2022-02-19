@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "snakerbone:ore_sniffer"
+    },
+    "title": "Man's Best... Tool?",
+    "description": "Obtain A Ore Sniffer",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "snakerbone:snakerbone",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "snakerbone:ore_sniffer"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

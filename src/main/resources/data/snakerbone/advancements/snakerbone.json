@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "snakerbone:kunzite_ingot"
+    },
+    "title": "The Purple Goodies",
+    "description": "Obtain A Kunzite Ingot",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "snakerbone:textures/block/kunzite_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "snakerbone:kunzite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

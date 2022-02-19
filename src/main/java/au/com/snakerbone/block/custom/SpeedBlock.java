@@ -6,13 +6,45 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class SpeedBlock extends Block {
 
     public SpeedBlock(Settings settings) {
         super(settings);
+    }
+
+    @Override
+    public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
+        float chance = 0.35f;
+
+        if(chance < random.nextFloat()) {
+            world.addParticle(ParticleTypes.HEART, pos.getX() + random.nextDouble(),
+                    pos.getY() + 0.5D, pos.getZ() + random.nextDouble(),
+                    0d, 0.015d + random.nextDouble(0.075d), 0d);
+        }
+
+        if(chance < random.nextFloat()) {
+            world.addParticle(ParticleTypes.HEART, pos.getX() + random.nextDouble(),
+                    pos.getY() + 0.5D, pos.getZ() + random.nextDouble(),
+                    0d, 0.015d + random.nextDouble(0.075d), 0d);
+        }
+
+        if(chance < random.nextFloat()) {
+            world.addParticle(ParticleTypes.HEART, pos.getX() + random.nextDouble(),
+                    pos.getY() + 0.5D, pos.getZ() + random.nextDouble(),
+                    0d, 0.015d + random.nextDouble(0.075d), 0d);
+        }
+
+        if(chance < random.nextFloat()) {
+            world.addParticle(ParticleTypes.HEART, pos.getX() + random.nextDouble(),
+                    pos.getY() + 0.5D, pos.getZ() + random.nextDouble(),
+                    0d, 0.015d + random.nextDouble(0.075d), 0d);
+        }
     }
 
     @Override

@@ -3,6 +3,8 @@ package au.com.snakerbone;
 import au.com.snakerbone.block.ModBlocks;
 import au.com.snakerbone.enchantment.ModEnchantments;
 import au.com.snakerbone.item.ModItems;
+import au.com.snakerbone.painting.ModPaintings;
+import au.com.snakerbone.util.ModLootTableModifiers;
 import au.com.snakerbone.util.ModRegistries;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -19,5 +21,7 @@ public class SnakerBoneMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModRegistries.registerModStuffs();
 		ModEnchantments.registerModEnchantments();
+		ModLootTableModifiers.modifyLootTables();
+		ModPaintings.registerPaintings();
 	}
 }
