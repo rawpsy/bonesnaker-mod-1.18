@@ -2,11 +2,14 @@ package au.com.snakerbone;
 
 import au.com.snakerbone.block.ModBlocks;
 import au.com.snakerbone.fluid.ModFluids;
+import au.com.snakerbone.screen.KunziteBlasterScreen;
+import au.com.snakerbone.screen.ModScreenHandlers;
 import au.com.snakerbone.util.ModModelPredicateProvider;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
+import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.client.render.RenderLayer;
 
 public class SnakerBoneClient implements ClientModInitializer {
@@ -35,5 +38,8 @@ public class SnakerBoneClient implements ClientModInitializer {
                         SimpleFluidRenderHandler.WATER_OVERLAY,
                         0xe9860c
                 ));
+
+        ScreenRegistry.register(ModScreenHandlers.KUNZITE_BLASTER_SCREEN_HANDLER, KunziteBlasterScreen::new);
+
     }
 }

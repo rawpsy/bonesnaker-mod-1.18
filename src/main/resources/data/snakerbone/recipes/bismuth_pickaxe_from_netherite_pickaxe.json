@@ -1,0 +1,14 @@
+{
+  "type": "snakerbone:kunzite_blaster",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_pickaxe"
+    },
+    {
+      "item": "snakerbone:bismuth"
+    }
+  ],
+  "output": {
+    "item": "snakerbone:bismuth_pickaxe"
+  }
+}
