@@ -94,6 +94,11 @@ public class ModItems {
     public static final Item HONEY_BUCKET = registerItem("honey_bucket",
             new BucketItem(ModFluids.HONEY_STILL, new FabricItemSettings().group(ModItemGroups.SNAKE).maxCount(1)));
 
+    public static final Item CHERRY_BLOSSOM_SIGN = registerItem("cherry_blossom_sign",
+            new SignItem(new FabricItemSettings().group(ModItemGroups.SNAKE).maxCount(16), ModBlocks.CHERRY_BLOSSOM_SIGN_BLOCK, ModBlocks.CHERRY_BLOSSOM_WALL_SIGN_BLOCK));
+
+    // registry start
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(SnakerBoneMod.MOD_ID, name), item);
     }
