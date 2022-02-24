@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "snakerbone:block/stripped_cherry_blossom_top",
+    "side": "snakerbone:block/stripped_cherry_blossom_log"
+  }
+}

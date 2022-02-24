@@ -85,6 +85,19 @@ public class ModBlocks {
     public static final Block HONEY_FLUID_BLOCK = registerBlockWithoutBlockItem("honey_fluid_block",
             new ModFluidBlock(ModFluids.HONEY_STILL, FabricBlockSettings.of(Material.WATER).noCollision().nonOpaque().dropsNothing()));
 
+    public static final Block CHERRY_BLOSSOM_LOG = registerBlock("cherry_blossom_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG).strength(1.5F,5.0F).sounds(BlockSoundGroup.WOOD)), ModItemGroups.SNAKE);
+
+    public static final Block CHERRY_BLOSSOM_WOOD = registerBlock("cherry_blossom_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD).strength(1.5F,5.0F).sounds(BlockSoundGroup.WOOD)), ModItemGroups.SNAKE);
+
+    public static final Block STRIPPED_CHERRY_BLOSSOM_LOG = registerBlock("stripped_cherry_blossom_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG).strength(1.5F,5.0F).sounds(BlockSoundGroup.WOOD)), ModItemGroups.SNAKE);
+
+    public static final Block STRIPPED_CHERRY_BLOSSOM_WOOD = registerBlock("stripped_cherry_blossom_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD).strength(1.5F,5.0F).sounds(BlockSoundGroup.WOOD)), ModItemGroups.SNAKE);
+
+    // registry start
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(SnakerBoneMod.MOD_ID, name), block);
