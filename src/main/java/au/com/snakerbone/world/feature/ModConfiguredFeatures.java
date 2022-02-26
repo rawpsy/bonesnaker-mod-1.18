@@ -33,6 +33,12 @@ public class ModConfiguredFeatures {
             ModConfiguredFeatures.register("pink_rose", Feature.FLOWER.configure(
                     createRandomPatchFeatureConfig(BlockStateProvider.of(ModBlocks.PINK_ROSE), 64)));
 
+    public static final List<OreFeatureConfig.Target> OVERWORLD_BISMUTH_ORES = List.of(
+            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, ModBlocks.BISMUTH_ORE.getDefaultState()));
+
+    public static final ConfiguredFeature<?, ?> BISMUTH_ORE = register("bismuth_ore",
+            Feature.ORE.configure(new OreFeatureConfig(OVERWORLD_BISMUTH_ORES, 9)));
+
     // registry start
 
     private static RandomPatchFeatureConfig createRandomPatchFeatureConfig(BlockStateProvider block, int tries) {
