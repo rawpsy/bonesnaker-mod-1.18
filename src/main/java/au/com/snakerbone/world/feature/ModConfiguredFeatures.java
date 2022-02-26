@@ -29,6 +29,17 @@ public class ModConfiguredFeatures {
                     CHERRY_BLOSSOM_TREE.withWouldSurviveFilter(ModBlocks.CHERRY_BLOSSOM_SAPLING), 0.1f)),
                     CHERRY_BLOSSOM_TREE.withWouldSurviveFilter(ModBlocks.CHERRY_BLOSSOM_SAPLING))));
 
+    public static final ConfiguredFeature<RandomPatchFeatureConfig, ?> PINK_ROSE =
+            ModConfiguredFeatures.register("pink_rose", Feature.FLOWER.configure(
+                    createRandomPatchFeatureConfig(BlockStateProvider.of(ModBlocks.PINK_ROSE), 64)));
+
+    // registry start
+
+    private static RandomPatchFeatureConfig createRandomPatchFeatureConfig(BlockStateProvider block, int tries) {
+        return ConfiguredFeatures.createRandomPatchFeatureConfig(tries,
+                Feature.SIMPLE_BLOCK.configure(new SimpleBlockFeatureConfig(block)).withInAirFilter());
+    }
+
     public static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
         return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(SnakerBoneMod.MOD_ID, name),
                 configuredFeature);
