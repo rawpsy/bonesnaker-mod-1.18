@@ -5,6 +5,7 @@ import au.com.snakerbone.block.custom.*;
 import au.com.snakerbone.fluid.ModFluids;
 import au.com.snakerbone.item.ModItemGroups;
 import au.com.snakerbone.sound.ModSounds;
+import au.com.snakerbone.world.feature.tree.CherryBlossomSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -102,6 +103,13 @@ public class ModBlocks {
 
     public static final Block CHERRY_BLOSSOM_SIGN_BLOCK = registerBlockWithoutBlockItem("cherry_blossom_sign",
             new SignBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS).strength(1.5F,5.0F).sounds(BlockSoundGroup.WOOD), ModSignTypes.CHERRY_BLOSSOM));
+
+    public static final Block CHERRY_BLOSSOM_LEAVES = registerBlock("cherry_blossom_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).strength(0.01F,1.0F).sounds(BlockSoundGroup.GRASS)), ModItemGroups.SNAKE);
+
+    public static final Block CHERRY_BLOSSOM_SAPLING = registerBlock("cherry_blossom_sapling",
+            new ModSaplingBlock(new CherryBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING)
+                    .strength(0.01F,1.0F).sounds(BlockSoundGroup.GRASS)), ModItemGroups.SNAKE);
 
     // registry start
 

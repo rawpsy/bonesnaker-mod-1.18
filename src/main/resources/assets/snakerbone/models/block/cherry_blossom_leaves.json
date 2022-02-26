@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "snakerbone:block/cherry_blossom_leaves"
+  }
+}
